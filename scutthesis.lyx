@@ -1,0 +1,4630 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scutthesis
+\options pdfcover
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "博士论文标题"
+\pdf_author "Kumar Mahesh"
+\pdf_subject "Biochemistry & Molecular Biology"
+\pdf_keywords "关键字1, 关键字2"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "unicode=false,linkcolor=blue, anchorcolor=black, citecolor=olive, filecolor=magenta, menucolor=red, urlcolor=magenta, pdfstartview=FitH"
+\papersize default
+\use_geometry false
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index 索引
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+title{UESTC Thesis Template} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+author{王稳}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{chineseabstract} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+为了适应日益增长的宽带信号和非线性系统的工程应用，用于分析瞬态电磁散射问题的时域积分方程方法研究日趋活跃。本文以时域积分方程时间步进算法及其快速算法为研究课题，
+重点研究了时间步进算法的数值实现技术、后时稳定性问题以及两层平面波算法加速计算等，主要研究内容分为四部分。
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chinesekeyword
+\end_layout
+
+\begin_layout Plain Layout
+
+{时域电磁散射，时域积分方程，时间步进算法，后时不稳定性，时域平面波算法} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{chineseabstract}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{englishabstract} With the widespread engineering applications ranging
+ from broadband signals and non-linear systems, time-domain integral equations
+ (TDIE) methods for analyzing transient electromagnetic scattering problems
+ are becoming widely used nowadays.
+ TDIE-based marching-on-in-time (MOT) scheme and its fast algorithm are
+ researched in this dissertation, including the numerical techniques of
+ MOT scheme, late-time stability of MOT scheme, and two-level PWTD-enhanced
+ MOT scheme.
+ The contents are divided into four parts shown as follows.
+\end_layout
+
+\begin_layout Plain Layout
+
+With the widespread engineering applications ranging from broadband signals
+ and non-linear systems, time-domain integral equations (TDIE) methods for
+ analyzing transient electromagnetic scattering problems are becoming widely
+ used nowadays.
+ TDIE-based marching-on-in-time (MOT) scheme and its fast algorithm are
+ researched in this dissertation, including the numerical techniques of
+ MOT scheme, late-time stability of MOT scheme, and two-level PWTD-enhanced
+ MOT scheme.
+ The contents are divided into four parts shown as follows.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+englishkeyword 
+\end_layout
+
+\begin_layout Plain Layout
+
+{time-domain electromagnetic scattering, time-domain integral equation (TDIE),
+ marching-on in-time (MOT) scheme, late-time instability, plane wave time-domain
+ (PWTD) algorithm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{englishabstract}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+INTRODUCTION
+\end_layout
+
+\begin_layout Section
+The Human Heart
+\end_layout
+
+\begin_layout Subsection
+Heart Anatomy and Physiology
+\end_layout
+
+\begin_layout Standard
+An organ system is a multi-organ system that functions together to undergo
+ crucial functions to meet the physiological needs of the body.
+ A human body is a multiplex organ system consisting of trillions of cells,
+ which all require oxygen, nutrients and signaling molecules.
+ These functions are performed by the circulatory system comprising of the
+ cardiovascular and the lymphatic circulatory system Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig1"
+
+\end_inset
+
+.
+ The heart is the principal organ of the cardiovascular system which acts
+ as a muscular pump, first described by the English physician William Harvey
+ in 1628 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "1_aird2011discovery"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure/human.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig1"
+
+\end_inset
+
+ Human cardiovascular system (Modified from Betts JG, 2013)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The adult human heart is approximately around the size of a fist, and measures
+ about 250-350 grams and beats on an average of about 60–70 times per minute
+ and is situated in the thoracic cavity, stretches obliquely from the second
+ rib to the fifth intercostal space, residing on the superior surface of
+ the diaphragm.
+ It is encapsulated in the double-walled sac called the pericardium, a serous
+ membrane inhabiting the middle mediastinum
+\begin_inset CommandInset citation
+LatexCommand cite
+key "2_Wessels2003"
+
+\end_inset
+
+ Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Fig:Fig2"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure/fig2.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Fig:Fig2"
+
+\end_inset
+
+ Position of the Heart in the Thorax
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The heart is located within the thoracic cavity, medially between the lungs
+ in the mediastinum.
+ It is about the size of a fist, is broad at the top, and tapers toward
+ the base (Modified from Betts JG, 2013).
+\end_layout
+
+\begin_layout Subsection
+Structures of the heart
+\end_layout
+
+\begin_layout Standard
+The human heart consists of four valves and four chambers; two atria and
+ two ventricles.
+ The atria are situated on the upper left and right sides and the ventricles
+ reside on the lower left and right sides.
+ The wall of each chamber composed of three tissue layers: the epicardium,
+ myocardium, and endocardium
+\begin_inset CommandInset citation
+LatexCommand cite
+key "3_Lin2012"
+
+\end_inset
+
+ Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Fig:fig3"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure/fig3.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Fig:fig3"
+
+\end_inset
+
+The structure of a mammalian heart
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A mature mammalian heart contains four chambers (right atrium, left atrium,
+ right ventricle, left ventricle) and four valves (pulmonary valve, PV;
+ tricuspid valve, TV; atrial valve, AV; mitral valve, MV).
+ The wall of each chamber consists of three tissue layers: endocardium,
+ myocardium and epicardium (Modified from Lin CJ, 2012).
+\end_layout
+
+\begin_layout Standard
+Pericardium has two layers; epicardium and the myocardium.
+ The inner layer is the myocardium and comprises mainly of cardiac muscle
+ and shapes the bulk of the heart.
+ The cardiac muscular layer: myocardium contracts and binds to one another
+ by crisscrossing tissue fibers positioned in circular bundles.
+ These bundles connect all parts of the heart together.
+ Endocardium, a white sheet of endothelium cells (squamous epithelium),
+ rests on the connective tissue layer.
+ Located on the inner myocardial surface it lines the chambers of the heart.
+ The endocardium has endothelial linings of the blood vessels leaving and
+ entering the heart.
+\end_layout
+
+\begin_layout Subsection
+Blood flow through the heart and lungs
+\end_layout
+
+\begin_layout Standard
+The cardiac chambers and valves are organized such that they separate systemic
+ from pulmonary circulation and ensure directional blood flow.
+ The four chambered mammalian heart receives deoxygenated blood from the
+ body through the superior and inferior vena cava.
+ Via the right atrium, the blood reaches the right ventricle, from where
+ it is pumped through the pulmonary artery into the lungs.
+ Oxygenated blood from the lungs returns to the heart through the pulmonary
+ veins and the left atrium.
+ The left ventricle pumps the blood into the aorta and back into the systemic
+ circulation.
+ This process of blood circulation continues as long as the individual remains
+ alive Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig4"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "4_Kirby2007,5_Moore2015"
+
+\end_inset
+
+.
+ The contraction of the heart sets off as the electrical impulses initiate
+ in the sinus node inhabiting the apex of the right atrium.
+ The impulse is then further transmitted to the secondary cardiac pacemaker,
+ the atrioventricular node, and later to the bundle of His and the Purkinje
+ fibers
+\begin_inset CommandInset citation
+LatexCommand cite
+key "6_Nandi2015"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure/fig4.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig4"
+
+\end_inset
+
+ Pathway of blood flow through the heart and lungs 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+commonly four main pulmonary veins that return blood from the lungs to the
+ left atrium.
+ Deoxygenated blood is indicated in blue, oxygenated blood is indicated
+ in dark red.
+ The direction of blood flow is shown by black arrows (Modified from Tortora
+ and Grabowski, 2000).
+\end_layout
+
+\begin_layout Section
+Embryonic Development of the Heart
+\end_layout
+
+\begin_layout Standard
+Heart is the first entirely functional organ in the process of embryonic
+ development.
+ Overall, in all higher vertebrates, the cardiac development obeys the same
+ standardized pattern: initiating with the fusion of myocardium and endocardium
+ in ventral midline to build a simpler tubular heart; followed by the onset
+ of function, looping to the right side; chamber specification and formation;
+ and terminating at the development of specialized conduction tissue, coronary
+ circulation, innervation, and mature valves development 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "4_Kirby2007"
+
+\end_inset
+
+.
+ The development of the human heart commence at the embryonic day 15 following
+ fertilization and the first most heartbeat occurs at day 22-23
+\begin_inset CommandInset citation
+LatexCommand cite
+key "5_Moore2015"
+
+\end_inset
+
+ Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig5"
+
+\end_inset
+
+.
+ Preliminary cardiac development is finalized by day 50.
+ It starts its function and circulation of blood begins during the 4th week
+ when the nutritional and oxygen requirements of the growing embryo can
+ no longer be provided by the process of diffusion from the placenta.
+ On the contrary, maturation processes like ventricular and atrial septation
+ continues until the birth
+\begin_inset CommandInset citation
+LatexCommand cite
+key "5_Moore2015"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure/fig5.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig5"
+
+\end_inset
+
+Drawing of the embryonic cardiovascular system (approximately 26 days)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+chorionic sac to embryo.
+ The umbilical arteries carry poorly oxygenated blood and waste products
+ from the embryo to the chorionic sac (outermost embryonic membrane) (Figure
+ Modified from Moore, KL 2015).
+ Located in the bilaterally paired cardiogenic fields in the splanchnic
+ layer of anterior lateral plate mesodermal origin the earliest progenitors
+ of the heart are present and during gastrulation, these cells immigrate
+ to the cranial side of the embryonic disc.
+ The heart formation begins near the cardiogenic area.
+ At embryonic day 7.5, they form the two heart fields that fusing at the
+ midline to form a crescent, also referred to as the primary heart field
+\begin_inset CommandInset citation
+LatexCommand cite
+key "4_Kirby2007,6_Nandi2015"
+
+\end_inset
+
+.
+ This region gives rise to the tubular heart containing of the outer myocardium
+ and the inner endocardium.
+ The initial cardiac progenitor cells are marked by the expression of the
+ transcription factors MESP1 and MESP2 which contributes to all cardiac
+ lineages.
+ Eventually, when the cardiac crescent is formed, these progenitors are
+ marked by the transcription factors GATA4 and NKX2.5, whose expression is
+ induced by members of the fibroblast growth factor (FGF), wingless type
+ (WNT) families and bone morphogenetic protein (BMP) families
+\begin_inset CommandInset citation
+LatexCommand cite
+key "7_Bruneau2008"
+
+\end_inset
+
+.
+ During the rightward looping, the progenitor cells protruding outside of
+ the primary heart field contributes progressively to the poles of the elongatin
+g heart tube.
+ The source of this new myocardium was first identified in 2001 as a cell
+ population located in the pharyngeal mesoderm defined as the secondary
+ heart field (SHF)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "8_Waldo2001,9_Bajolle2008"
+
+\end_inset
+
+.
+ Cells of the SHF contribute to the outflow tract (OT), right ventricle
+ and inflow region of the heart, with the OT being an exclusive derivative
+ of the SHF.
+ The SHF intercepts signals from surrounding cell types including the pharyngeal
+ endoderm, ectoderm and mesoderm as well as neural crest (NC) cells.
+ Cardiac progenitor cells in the SHF are further distinguished by the expression
+ of the transcription factors ISL1 and TBX1 and the growth factors FGF8
+ and FGF10.
+ Additionally, they are later characterized by a continued proliferation
+ and a delay of differentiation, which is regulated by a complex interplay
+ of signals including the FGF, BMP, Wnt, Hedgehog (Hh) and Notch pathways
+\begin_inset CommandInset citation
+LatexCommand cite
+key "10_Rochais2009,11_Dyer2009"
+
+\end_inset
+
+.
+ The extension of primary and secondary heart fields gives rise to primitive
+ atria and ventricles.
+ The center of the heart tube becomes twisted to form the ventricular loop,
+ which at the end forms left and right ventricles.
+ On day 9, the formation of truncus arteriosus, endocardial cushions and
+ future valves of the heart takes place
+\begin_inset CommandInset citation
+LatexCommand cite
+key "7_Bruneau2008,12_Epstein2015"
+
+\end_inset
+
+.
+ The ventricular surface is encapsulated by the epicardial cells on day
+ 10 excluding the truncus arteriosus, which is enveloped by epicardial cells
+ on day 11.
+ The sub-epicardial connective tissue and capillary containing blood cells
+ are detected on the 11th day.
+ By the day 15, septum in atria and ventricles, and valve are formed.
+ The left ventricle and left and right atria are formed by primary heart
+ field, whereas the secondary heart field gives rise to the right ventricle,
+ the outflow tract, and the left and right atria
+\begin_inset CommandInset citation
+LatexCommand cite
+key "6_Nandi2015"
+
+\end_inset
+
+.
+ The elongation and looping of the heart tube leads to parallel arrangement
+ of the future cardiac chambers.
+ The following septation process leads to the formation of the atrioventricular
+ septum from the atrioventricular cushions and to the septation of the OT
+ based on the truncal and conal cushions.
+ These endocardial cushions are formed by the collection of extracellular
+ matrix between the endocardium and myocardium and they are also involved
+ in the formation of the mitral and tricuspid (atrioventricular) valves
+ as well as the aortic and pulmonic (semilunar) valves, respectively.
+ Furthermore, the cardiac pacemaking and conduction system as well as the
+ coronary system are developed from regions of specialized myocardium and
+ the ventricular wall undergoing trabeculation and compaction, ultimately
+ leading to the characteristic myocardial structure crucial for the normal
+ contractile functioning of the heart 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "3_Lin2012,4_Kirby2007,13_Wang2013"
+
+\end_inset
+
+.
+ The main steps of cardiac development are depicted in Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig6"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure/fig6.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig6"
+
+\end_inset
+
+ Cardiac Development
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+progenitors migrate to the splanchnic mesoderm to form the cardiac crescent.
+ At E7.5 in the mouse, the cardiac crescent can be divided into two heart
+ field lineages based on differential gene expression and their respective
+ contribution to heart, a first heart field (red) and a second heart field
+ (yellow), which is located posteriorly and medially to the first heart
+ field.
+ At E8.0, the linear heart tube is present.
+ At E8.5, the looping is associated with uneven growth of cardiac chambers.
+ The outflow tract is at the arterial pole and the inflow tract and primitive
+ atria are at the venous pole.
+ By E9.5, the common atrium has moved superior to the ventricles and is separated
+ by a distinct atrio-ventricular canal.
+ By E10.5, cardiac neural crest cells from the dorsal neural tube migrate
+ via the pharyngeal arches to the cardiac outflow tract.
+ Further cardiac development involves a series of septation events and myocardia
+l trabeculation that result in a mature four-chambered heart integrated
+ with the circulatory system depicted at E15.5 (Figure Modified from Jonathan
+ A.
+ Epstein 2015).
+\end_layout
+
+\begin_layout Subsection
+Differentiation of fetal cardiac cell types
+\end_layout
+
+\begin_layout Standard
+Embryonic stem cells differentiate into a primitive tubular heart that forms
+ the adult heart.
+ The lineage specific precursor cells differentiate into different cells
+ that form myocardium, vascular endothelium, fibroblasts and smooth muscle
+ cells.
+ These cells contribute to contractility, conduction system and vasculature
+ of the adult heart
+\begin_inset CommandInset citation
+LatexCommand cite
+key "6_Nandi2015"
+
+\end_inset
+
+.
+ An example of different types of cells in the adult heart is shown in Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig7"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure/fig7.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig7"
+
+\end_inset
+
+ Schematic presentations of cardiac cell types
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The adult heart consists of several cell types, which maintain structural,
+ mechanical, electrical and functional integrity of the heart.
+ A.
+ Fibroblasts contribute in the formation of extracellular matrix, which
+ provides mechanical support to the heart.
+ B.
+ Atrial cardiomyocytes contribute to contractility of atrium.
+ C.
+ Endothelial cells form the inner lining of cardiac blood vessels.
+ D.
+ Conduction cells generate electrical impulses for cardiac contractility.
+ E.
+ Ventricular cardiomyocytes are involved in contractility of the ventricles.
+ F.
+ Smooth muscle cells render support to the coronary arteries and vasculatures.
+ (Figure Modified from Nandi, S.S.
+ 2015).
+\end_layout
+
+\begin_layout Subsection
+Transcription factor (TFs) complex process of cardiogenesis
+\end_layout
+
+\begin_layout Standard
+During the process of cardiogenesis, for the stabilization and strength
+ of the cardiac gene program, Transcription factors (TFs) operates certain
+ complex processes by regulating each other’s expression Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig8"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure/fig8.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig8"
+
+\end_inset
+
+ Cardiac cell types derived from multipotent progenitors
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Differentiated cardiac cell types are marked by indicated genes (green).
+ Recently, several factors have been defined as master regulators for cardiomyog
+enesis (red).
+ The combination of Tbx5, Gata4, and Baf60c induces direct differentiation
+ of mesodermal cells into ectopic beating myocytes, bypassing the cardiac
+ progenitor state.
+ Tbx5, Gata4, and Mef2c together can also induce cardiomyocytes from fibroblasts
+ (Figure modified from van Weerd 2011).
+\end_layout
+
+\begin_layout Subsection
+Heart development among organisms
+\end_layout
+
+\begin_layout Standard
+Various experimental models (insects and higher vertebrates) for testing
+ gene knockdown and expression lead to the identification of several TFs
+ highly conserved in organisms, and their impact on the heart development
+ Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig9"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "14_Vecoli2014"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure/fig9.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig9"
+
+\end_inset
+
+ The complexity of development varies among organisms despite the conserved
+ core of transcription factor genes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the figure, the most important evolutionarily conserved transcription
+ factors (NK2, MEF2, GATA, Tbx, and Hand) known to control cardiac human
+ cell fates are reported in different classes of organisms.
+ In Nematodes NK2, MEF2, Tbx has been found (internal line); in Cnidaria
+ NK2, MEF2, GATA and Tbx have been found (middle line) while in Antropodos,
+ Cephalochordates, Fish, Amphibians, and Amniotes all the TFs (NK2, MEF2,
+ GATA, and Tbx) are conserved (external circle line) (Figure modified from
+ Cecilia Vecoli 2014).
+\end_layout
+
+\begin_layout Subsection
+Pathophysiology of embryonic hearts
+\end_layout
+
+\begin_layout Standard
+Cardiac development is a highly organized process controlled by an evolutionary
+ conserved gene regulatory network that interlinks transcription factors
+ and signaling pathways with genes for muscle growth, patterning and contraction.
+ A set of specific conserved transcription factors (MEF2, Tbx, NK2, GATA
+ and Hand) set up the heart development and regulates each other’s expression,
+ thereby providing stability to the cardiac gene program
+\begin_inset CommandInset citation
+LatexCommand cite
+key "14_Vecoli2014,16_Olson2006"
+
+\end_inset
+
+.
+ Fetal heart progenitor cells are differentiated into specific lineages
+ to form specific types of cells.
+ The differentiation of these cells into a particular lineage is a confined
+ regulatory process, which is based on the microenvironment and the signaling
+ cues in the extracellular matrix.
+ Deregulation of the regulatory genes involved in lineage determination,
+ differentiation, or cardiac development leads to the fetal heart failure,
+ and may also end up in embryonic lethality.
+ Inability to contract and malfunctioning of the myocardial compliance as
+ a result of hemodynamic stress amplify the incidence of fetal heart failure
+\begin_inset CommandInset citation
+LatexCommand cite
+key "6_Nandi2015,14_Vecoli2014"
+
+\end_inset
+
+.
+ The phenotype of fetal cardiac arrest is shown in Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig10"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure/fig10.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig10"
+
+\end_inset
+
+ Schematic presentation of cardiac genetic reprogramming in the fetal, adult,
+ and failing heart
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A.
+ The four- chambered fetal heart.
+ The genes and miRNAs involved in normal development of the fetal heart
+ are highlighted in the box.
+ B.
+ Representation of transverse sections of the adult heart with normal ventricula
+r myocardium.
+ Genes and miRNAs that are upregulated and downregulated during heart failure
+ are highlighted in the box.
+ C.
+ Representative transverse sections of the failing heart with abnormal ventricul
+ar myocardium and hypertrophy.
+ Genes and miRNAs that are upregulated and downregulated are highlighted
+ in the box.
+ D.
+ Adaptive remodeling in the failing heart through re-activation of the fetal
+ genetic programing to generate new cardiac cells through differentiation
+ of cardiac progenitor cells and trans-differentiation of fibroblasts into
+ cardiomyocytes can be induced for the therapy of heart failure.
+ (Figure Modified from Nandi, S.S.
+ 2015).
+\end_layout
+
+\begin_layout Section
+Congenital Heart Disease
+\end_layout
+
+\begin_layout Standard
+In In the process of embryogenesis of heart, a wide range of deficits arise,
+ amongst which congenital heart disease (CHD) is frequent.
+ These deficits have direct relationship on the functioning of heart.
+ CHD is the structural and / or functional deficits and is mainly non-infectious
+ cause of birth defects with a prevalence of about eight out of every 1,000
+ children born, and remains leading cause of morbidity and mortality in
+ childhood, responsible for approximately 10% of all infant death
+\begin_inset CommandInset citation
+LatexCommand cite
+key "17_Marelli2007,19_Wang2015"
+
+\end_inset
+
+.
+ Sommer,Wang & Yang found that a broad range of congenital heart diseases
+ may either be isolated or interlinked with other cardiac anomalies, which
+ results in a wide spectrum of conditions including; degraded quality of
+ life cardiac enlargement, infective endocarditis, thromboembolism, reduced
+ exercise capacity, pulmonary hypertension, congestive heart failure, delayed
+ fatal brain development, Eisenmenger's syndrome, moreover arrhythmias,
+ and even sudden cardiac death
+\begin_inset CommandInset citation
+LatexCommand cite
+key "20_Sommer2008,21_Yang2013"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Prevalence of Congenital Heart Disease
+\end_layout
+
+\begin_layout Standard
+According Former studies suggest prevalence and pattern of a group of genetic
+ disorders associated with CHD varies both within and among regions and
+ countries.
+ In North America, the preponderance of CHD (8.1 per 1000 live births) is
+ less than that of Asia (9.3 per 1000 live births), whereas in Africa its
+ frequency is is skyrocketing.
+ Unfavourable socio-economic environment in Africa and the lack of accurate
+ diagnostic techniques by genetic laboratories, including inadequate prenatal
+ diagnosis that early detects genetic diseases hence becomes CHDs main cause.
+ CHD may also question the physiological, emotional, and socioeconomic state
+ of patients’ families and society.
+ The fundamental research endeavour is not only to identify the reasons
+ behind CHD, but also to contribute to the healthcare of growing community
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "18_Linde2011,22_Fahed2013,23_Teteli2014"
+
+\end_inset
+
+.
+ Over a decade, remarkable progress has been made in elucidating the etiology
+ of CHD, but the defined mechanisms behind it in majority of the patients
+ still remains unknown.
+ Currently near about half of the infant morbidity is due to CHD.
+ On the contrary, with the application of state-of the-art advancements
+ in the prenatal diagnosis, corrective strategies, and longitudinal care
+ a decrease in the infantile mortality rate has been seen.
+ Additionally, advances in cardiovascular medicine and surgery have led
+ to significant improvements in the treatment of CHD.
+ In the past, most patients with CHD died in early childhood.
+ Today, about 75% of CHD patients surviving the first year of life will
+ also reach adulthood and the number of adult patients now surpass that
+ of children with CHD
+\begin_inset CommandInset citation
+LatexCommand cite
+key "17_Marelli2007,24_Khairy2010"
+
+\end_inset
+
+.
+ In U.S, an estimated amount of nearly 760,000 individuals with CHD born
+ after 1989 are predicted to remain alive by the year 2020.
+ In Germany, a prevalence of approximately 280,000 individuals with CHD
+ in 2020 is expected, with about 180,000 individuals being at least 18 years
+ old.
+ Nevertheless, CHD patients are at a great risk of long-term complications
+ like arrhythmias, sudden cardiac death, aortic dissection and pulmonary
+ regurgitation
+\begin_inset CommandInset citation
+LatexCommand cite
+key "25_Webb2002,27_Warnes2005"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Causes of Congenital Heart Disease
+\end_layout
+
+\begin_layout Standard
+The causes underlying congenital heart malformations are diverse and already
+ decades ago, a multifactorial background of CHD
+\begin_inset CommandInset citation
+LatexCommand cite
+key "28_DeDecker2016"
+
+\end_inset
+
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig11"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure/fig11.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig11"
+
+\end_inset
+
+ The etiological landscape of congenital heart disease
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+`
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Showing the relationships of the various forms of genetic aetiologies of
+ congenital heart disease (Figure modified from De Decker 2016).
+\end_layout
+
+\begin_layout Standard
+Today, a wide range of environmental, genetic, and epigenetic causes of
+ CHD has been identified Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig12"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "14_Vecoli2014,15_Su2016,29_Pulignani2013"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure/fig12.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig12"
+
+\end_inset
+
+ Pathogenesis of congenital heart defects
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The most likely scenario is that the etiology of disease involves multiple
+ factors, including different genetic loci, environmental influences, epigenetic
+ factors (eg, DNA methylation or histone modifications) and miRNA dysfunction
+ and /or a combination of these factors (Figure modified from Cecilia Vecoli
+ 2014).
+\end_layout
+
+\begin_layout Subsection
+Environmental factors
+\end_layout
+
+\begin_layout Standard
+The intrauterine environment of the developing embryo/foetus is effected
+ by several maternal factors such as health/disease status, lifestyle, medicatio
+n, exposure to environmental teratogens, (such as environmental pollutants,
+ including dioxins, dioxin-like polychlorinated biphenyls), dioxin exposure
+ in adulthood has been associated with hypertension and cardiovascular disease.
+ Some pesticides (such as methyl parathion), maternal exposures to alcohol,
+ smoking, isotretinoin, thalidomide, antiseizure medications, antithyroid
+ drug (ATD) such as methimazole/carbimazole can induce disruptions during
+ early embryonic development and has been reported as a primary cause of
+ CHD risk factors and infectious agent (such as rubella), rubella infection
+ of the foetus causes congenital rubella syndrome (CRS), resulting in severe
+ morbidities of childhood blindness, deafness, heart disease, and mental
+ retardation
+\begin_inset CommandInset citation
+LatexCommand cite
+key "30_Zhu2009,35_Mozaffarian2016"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Chromosomal
+\end_layout
+
+\begin_layout Standard
+The primary genetic factors for CHD are Chromosomal and monogenetic abnormalitie
+s (about 8% of the cases), multifactorial abnormalities (9% of the cases)
+ and environmental teratogens (2% of the cases).
+ Renowned causes leading to CHDs are: sporadic genetic variations, point
+ mutations, deletion and duplications.
+ CHD mutations arise as autosomal dominant, autosomal recessive or X-linked
+ traits that are expressed with high penetrance and with versatile clinical
+ manifestations.
+ Furthermore, CHD is genetically heterogeneous.
+ Hundreds of autosomal dominant or X-linked mutations have been identified
+ in hereditary forms of CHD.
+ Autosomal recessive or somatic mutations and polygenic variants create
+ alternative genetic models to account for the population prevalence of
+ CHD.
+ Some cases of CHD might cause in somatic mutations in monogenic genes that
+ develop during the early development of cardiac progenitor cells.
+ It is identified that Chromosomal aneuploidy, being the first recognized
+ genetic cause of CHD, occurs in approximately 40% to 50% of trisomy 21
+ (1in 600 births), 25% to 35% of Turner syndrome (45,X) (1 in 2500 female
+ births), and in almost all cases of both trisomy 13and trisomy 18
+\begin_inset CommandInset citation
+LatexCommand cite
+key "23_Teteli2014,36_Gelb2013,38_ARichards2010"
+
+\end_inset
+
+ Table
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tbl1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ 
+\size scriptsize
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tbl1"
+
+\end_inset
+
+
+\size default
+Common syndromes resulting from Anueploidy and Microdeletions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="3cm">
+<column alignment="left" valignment="top" width="3cm">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top" width="6cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Syndrome
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Cardiac Anomalies
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+% with CHD
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Other Clinical Features
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Trisomy 13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+ASD, VSD, PDA, HLHS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+80%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Microcephaly, holoprosencephaly, scalp defects, severe mental retardation,
+ polydactyly, cleft lip or palate, genitourinary abnormalities,
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+omphalocele, microphthalmia
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Trisomy 21 (Down syndrome)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+ASD, VSD, PDA, TOF, DORV, CoA, BAV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+90-100%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Polyhydramnios, rocker-bottom feet, hypertonia, biliary atresia, sever
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+mental retardation, diaphragmatic hernia, omphalocele
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Trisomy 21 (Down syndrome)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+ASD, VSD, AVSD, TOF
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+40-50%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Hypotonia, developmental delay, palmar crease, epicanthal folds
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Monosomy X (Turner Syndrome)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+CoA, BAV, AS, HLHS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+25-35%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Short stature, shield chest with widely spaced nipples, 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+webbed neck, lymphedema, primary amenorrhea
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+47, XXY (Klinefelter Syndrome)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+PDA, ASD, mitral valve prolapse
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+50%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Tall stature, hypoplastic testes, delayed puberty, variable developmental
+ delay
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+22q11.2 deletion (DiGeorge Syndrome)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+IAA Type B, aortic arch anomalies, truncus arteriosus, TOF
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+75%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Thymic and parathyroid hypoplasia, immunodeficiency, low-set ears,
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+hypocalcemia, speech and learning disorders, renal anomalies
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+7q11.23 deletion (Williams-Beuren Syndrome)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Supravalvar AS, PPS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+50-85%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Infantile hypercalcemia, elfin facies, social personality, developmental
+ delay, joint contractures, hearing loss
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Genetic factors
+\end_layout
+
+\begin_layout Standard
+Studies demonstrated that transcription factors play a pivotal role during
+ heart development.
+ Hundreds of genes have been disclosed to be involved in the murine heart
+ development.
+ In the heart development, GATA binding protein 4 (GATA4), NK2 homeobox5
+ (NKX2.5), T-box 5 (TBX5), Zic family member 3(ZIC3), myosin heavy chain
+ 6 (MYH6) and NOTCH with cross communication, ligand-receptor interactions,
+ complex signal transduction pathways, and a network of transcription factors
+ affecting the expression of cardiac specific genes of heart, plays a key
+ role
+\begin_inset CommandInset citation
+LatexCommand cite
+key "42_Luger1997"
+
+\end_inset
+
+.
+ A number of CHDs can occur due to mutations in more than one gene (genetic
+ heterogeneity), and mutations in one gene can cause a diverse range of
+ CHDs (phenotypic heterogeneity).
+ Cardiac malformations can arise as isolated defects or may turn up as features
+ of syndromic disorders that show a wide range of additional non-cardiac
+ symptoms like skeletal anomalies, mental disabilities, distinctive facial
+ features and renal anomalies.
+ Likewise, they can be caused by a variety of different genetic aberrations.
+ Transcription factors and associated genes Alterations in the heart muscle
+ specific MYH6 (α-myosin heavy chain) and several proteins that are linked
+ with MYH6 such as GATA4 that forms a complex with the TBX5 (T-box gene
+ 5) ultimately results in atrial septal defects
+\begin_inset CommandInset citation
+LatexCommand cite
+key "17_Marelli2007"
+
+\end_inset
+
+.
+ Mutations have been reported in the homebox transcription factor NKX2.5
+ in a family suffering from ASD along with conduction delay and in the transcrip
+tion factor GATA4 in a family is noted with isolated septal defects.
+ Several pathways are involved in the cardiac development and a change in
+ any of these three genes can lead to a cardiac defect.
+ Single TF mutations In humans, the clinical range of deformities arising
+ from single TF mutations is extremely broad and the genotype-phenotype
+ relationship is highly complex.
+ Changes in GATA4 gene can cause both inherited septation defects and atrioventr
+icular canal.
+ Alterations in the NKX2.5 gene were reported as a genetic cause of various
+ CHD phenotypes (e.g.
+ atrial /ventricular septal defects, coarctation of aorta) comprising electrophy
+siological alterations alike the TBX5 gene
+\begin_inset CommandInset citation
+LatexCommand cite
+key "17_Marelli2007"
+
+\end_inset
+
+.
+ Another reason behind the cause of syndromic and non- syndromic disorders
+ may be defects in single genes.
+ Examples include; Allagille syndrome caused by mutations in NOTCH2or JAG1.
+ Holt-Oram syndrome is caused by defects in TBX5.
+ Another TBX gene, the TBX1 results in DiGeorge Syndrome, which has symptoms
+ and features including defects of the cardiac outflow tract and Tetralogy
+ of Fallot (TOF).
+ In TOF, the ventricular septal defect (VSD) mixes oxygenated and deoxygenated
+ blood in the left ventricle
+\begin_inset CommandInset citation
+LatexCommand cite
+key "9_Bajolle2008,41_Weerd2011,43_Berger2007"
+
+\end_inset
+
+.
+ Table(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tbl2"
+
+\end_inset
+
+and
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tbl3"
+
+\end_inset
+
+).
+ A deformity may arise from different embryological mechanisms, and this
+ is described as the ‘One heart disease—several mechanisms—several genes’
+ concept.
+ In addition, disability of these different mechanisms may originate a wide
+ range of heart diseases.
+ These concepts henceforth elucidate the genetic heterogeneity of a single
+ type of CHD as well as the phenotypic heterogeneity of mutations in a single
+ gene
+\begin_inset CommandInset citation
+LatexCommand cite
+key "43_Berger2007"
+
+\end_inset
+
+ Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig13"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tbl2"
+
+\end_inset
+
+Common Syndromes Associated with CHD Resulting from Single Gene Defects
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size tiny
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="4">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="2cm">
+<column alignment="left" valignment="top" width="4cm">
+<column alignment="left" valignment="top" width="6cm">
+<column alignment="left" valignment="top" width="2cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Syndrome
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Cardiac Anomalies
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Other Clinical Features
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Causative Gene(s)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Noonan Syndrome
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+PS with dysplastic pulmonary valve, AVSD, HCM, CoA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Short stature, webbed neck, shield chest, developmental delay, cryptorchidism,
+ abnormal facies
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+PTPN11, KRAS, RAF1, SOS1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Costello Syndrome
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+PS, HCM, cardiac conduction abnormalities
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Short stature, developmental delay, coarse facies, nasolabial papillomata,
+ increased risk of solid organ carcinoma
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+HRAS
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+ LEOPARD Syndrome 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+PS and cardiac conduction abnormalities
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Lentigines, hypertelorism, abnormal genitalia, growth retardation, sensorineural
+ deafness
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+PTPN11, RAF1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Alagille Syndrome
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+PS, TOF, ASD, peripheral pulmonary stenosis
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Bile duct paucity, cholestasis, typical facies, butterfly vertebrae, ocular
+ anomalies, growth delay, hearing loss, horseshoe kidney
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+JAG1, NOTCH2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Marfan Syndrome
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Aortic root dilatation and dissection, mitral valve prolapse
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Tall stature, arachnodactyly, pectus abnormality, scoliosis, ectopia lentis,
+ spontaneous pneumothorax, striae, dural ectasia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+FBLN, TGFBR1, TGFBR2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Holt-Oram Syndrome
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+ASD, VSD, AVSD, progressive AV conduction system disease
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Preaxial radial ray malformations (thumb abnormalities, radial dysplasia)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+TBX5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Heterotaxy Syndrome
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+DILV, DORV, d-TGA, AVSD
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+intestinal malrotation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+ZIC3, CFC1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Char Syndrome
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+PDA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Dysmorphic facies and digit anomalies
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+TFAP2b
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+CHARGE Syndrome
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+ASD, VSD, valve defects
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Coloboma, choanal atresia, developmental delay, genital and/or urinary anomalies
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+CHD7, SEMA3E
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tbl3"
+
+\end_inset
+
+Non-Syndromic CHD Resulting from Single Gene Defects 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Cardiac Anomalies
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Gene
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+ASD, atrioventricular conduction delay, TOF, tricuspid valve abnormalities
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+NKX2.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+ASD, VSD
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+GATA4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+ASD, hypertrophic cardiomyopathy
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+MYH6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Cardiac septation defects associated with PHTN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+BMPR2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Endocardial cushion defects
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+CRELD1, ALK2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+BAV, early valve calcification
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+NOTCH1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+d-TGA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+PROSIT-240
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure/fig13.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig13"
+
+\end_inset
+
+One heart disease - several mechanisms - several genes’.
+ A malformation may originate from different embryological mechanism
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A common arterial trunk may result from a participation defect of progenitors
+ from the second cardiac field and/or a migration defect of the neural crest
+ cells and/or a rotation defect of the myocardium and/or a formation abnormality
+ of the endocardial cushions.
+ In addition, impairment of these different mechanisms may generate a broad
+ spectrum of heart diseases affecting the conotruncal region.
+ CAT: common arterial trunk; DORV: double outlet right ventricle; EM: epithelio-
+mesenchymal; IAA: interrupted aortic arch; TGA: transposition of the great
+ arteries; TOF: tetralogy of Fallot; TOF&PA: tetralogy of Fallot with pulmonary
+ atresia; VSD: sub-arterial ventricular septal defect (Figure modified from
+ bajolle 2008).
+\end_layout
+
+\begin_layout Subsection
+Epigenetic mechanisms
+\end_layout
+
+\begin_layout Standard
+The maintenance of heart development is essentially the function of the
+ T-box transcription factors.
+ These factors have a direct relationship in controlling gene transcription,
+ however, in addition to this they are intimately related to developmental
+ processes through interactions with epigenetic control mechanisms.
+ These complexes change chromatin by modifying and remodeling factors as
+ a result of which activation and repression of DNA transcription takes
+ place.
+ The development of eukaryotes demands for epigenetic mechanisms to control
+ gene transcription for regulating cell specification and differentiation.
+ Chromatin rearrangement is essential vital epigenetic mechanism for the
+ regulation of gene.
+ At the epigenetic level, transcription factors are monitored by the arrangement
+ of DNA into higher-order chromatin structures
+\begin_inset CommandInset citation
+LatexCommand cite
+key "44_Greer2012"
+
+\end_inset
+
+ Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig14"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure/fig14.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig14"
+
+\end_inset
+
+Chromatin structure and remodelling factors.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+DNA is organized in chromatin composed of condensed nucleosomes: units of
+ 146 bp of DNA wrapped twice around an octamer of two copies of each histone
+ protein H2A, H2B, H3, and H4.
+ The flexible amino-terminal tails of the histones, protruding outward from
+ the nucleosome, allow for post-translational modifications through (de)acethyla
+tion, phosporylation, ubiquitination, methylation, and sumoylation.
+ Such covalent modifications alter DNA–histone interactions, affecting accessibi
+lity of transcription factors.
+ Chromatin plays an important role in the regulation of gene expression.
+ It is highly structured and can be compacted to varying degrees, which
+ impacts on the accessibility of the DNA for the transcription machinery.
+ The basic unit of chromatin is the nucleosome, consisting of 146 base pairs
+ (bp) of DNA wrapped around eight histone proteins.
+ A number of epigenetic mechanisms control the chromatin structure, including
+ chromatin remodeling complexes, modifications and variants of histone proteins
+ as well as modifications of the DNA itself
+\begin_inset CommandInset citation
+LatexCommand cite
+key "45_Serra-Juhe2015"
+
+\end_inset
+
+.
+ Histones are small globular proteins that are highly conserved and can
+ undergo various post-translational modifications, such as methylation,
+ acetylation or phosphorylation on their N-terminal tails.
+ These modifications act either directly on chromatin structure by altering
+ electrostatic charges and thereby internucleosomal contacts or serve as
+ targeting signals for chromatin remodeling complexes or other chromatin-binding
+ proteins.
+ Different modifications can function as activators or repressors of transcripti
+on [46, 47].
+ Epigenetics is henceforth the amalgamation of all the processes that are
+ in charge of the expression of the genes involved in the normal development
+ of all tissues and organs including; the DNA sequences that code for structural
+ proteins, or those that are responsible for the regulatory proteins such
+ as transcription factors
+\begin_inset CommandInset citation
+LatexCommand cite
+key "31_Kopf2009"
+
+\end_inset
+
+.
+ Among the various epigenetic mechanisms, aberrant DNA methylation has been
+ distinctly linked to a number of diseases.
+ By the addition of a methyl group in the 5′ carbon of cytosine a change
+ in the structure of the DNA molecule occurs leading to a wide range of
+ possible alterations of gene expression pattern.
+ Conclusively, aberrant DNA methylation with its transcriptional consequences
+ might have a significant role in causing human disease
+\begin_inset CommandInset citation
+LatexCommand cite
+key "48_Yang2012"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Classification of Congenital Heart Disease
+\end_layout
+
+\begin_layout Standard
+Classification of CHD is based on both physiological and anatomical method
+ Table
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tbl4"
+
+\end_inset
+
+ .
+ The physiological approach is to sub-divide these into either cyanotic
+ or acyanotic lesions.
+ Cyanotic lesions have deoxygenated blood in the systemic circulation as
+ a result of either (a) reduced blood flow to the pulmonary circulation
+ with obligatory right to left shunting, or (b) an increased blood flow
+ to the pulmonary circulation leading to increased pulmonary vascular resistance
+ with a late onset of right to left shunt.
+ Acyanotic lesions comprise those with (a) simple left to right shunts,
+ or (b) obstructive outflow or regurgitated valves.
+ However, the anatomical approach is to divide them into either simple or
+ complex lesions.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "26_Elisabeth2008"
+
+\end_inset
+
+.
+ CHD contains a heterogeneous group of cardiac deformities influencing different
+ structures of the heart and can be further divided into three main categories,
+ namely; septation defects, cyanotic heart disease and left-sided obstruction
+ defects.
+ Septation defects can affect the atria (atrial septal defect, ASD), the
+ ventricles (ventricular septal defect, VSD) or structures in the central
+ part of the heart (atrioventricular septum defect, AVSD).
+ Cyanotic heart defects lead to a bluish appearance of the skin due to mixing
+ of deoxygenated and oxygenated blood; this condition is also known as the
+ “blue baby syndrome”.
+ Furthermore, underlying malformations include; Tetralogy of Fallot (TOF),
+ transposition of the great arteries (TGA), double outlet right ventricle
+ (DORV), Ebstein’s anomaly, and persistent truncus arteriosus (PTA).
+ Left-sided obstructive lesions contains diseases like hypo plastic left
+ heart syndrome, mitral or aortic stenosis and aortic coarctation
+\begin_inset CommandInset citation
+LatexCommand cite
+key "10_Rochais2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tbl4"
+
+\end_inset
+
+Classification of types of CHD
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="30" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Left to Right shunt Atrial 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+septal defect Ventricular 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+septal defect Atrioventricular 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+septal defect Patent ductus
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Arteriosus
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Partial anomalous pulmonary venous drainage
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Outflow obstruction 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Bicuspid aortic valve 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Coarctation of the aorta
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Pulmonary stenosis
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Hypoplastic left heart syndrome
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Cyanosis and decreased pulmonary blood flow
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Tetralogy of Fallot 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Tricuspid atresia 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Pulmonary atresia
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Hypoplasia of right ventricle
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Ebstein’s anomaly
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Cyanosis and increased pulmonary blood flow
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Transposition of the great arteries
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Double outlet ventricle 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Double inlet ventricle 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Truncus arteriosus
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Total anomalous pulmonary venous drainage
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Cyanosis and increased pulmonary vascular resistance
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+VSD with Eisenmenger syndrome 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+ASD with Eisenmenger syndrome 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+PDA with Eisenmenger syndrome
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Anomalies of major blood vessels
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Congenitally corrected transposition of the great arteries
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Coronary artery anomalies
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Clinically CHDs count at least 30 different sub-types Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig15"
+
+\end_inset
+
+ such as; the atrial septal defect (ASD), ventricular septal defect (VSD),
+ Holt–Oram syndrome (HOS), tetralogy of fallot (TOF), transposition of the
+ great arteries, patent ductus arteriosis (PDA), complete atrioventricular
+ canal defect (CAVC), coarctation of the aorta (CoA), pulmonary valve stenosis
+ and hypo plastic left heart syndrome.
+ Amongst all these, the atrial septal defect (ASD) is the second most frequent
+ cardiovascular dysmor¬phia coming second to ventricular septal defect
+\begin_inset CommandInset citation
+LatexCommand cite
+key "42_Luger1997,49_Zhang2016,50_Geva2014"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure/fig15.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig15"
+
+\end_inset
+
+Structures of the heart affected by congenital malformations
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The estimated incidence of each disease per 1,000 live births is given in
+ parentheses.
+ AC, aortic coarctation; AS, aortic stenosis; ASD, atrial septal defect;
+ AVSD, atrioventricular septal defect; BAV, bicuspid aortic valve; DORV,
+ double outlet right ventricle; Ebstein’s, Ebstein’s anomaly of the tricuspid
+ valve; HLHS, hypoplastic left heart syndrome; HRHS, hypoplastic right heart
+ syndrome; IAA, interrupted aortic arch; MA, mitral atresia; MS, mitral
+ stenosis; PDA, patent ductus arteriosus; PS, pulmonary artery stenosis;
+ PTA, persistent truncus arteriosus; TA, tricuspid atresia; TAPVR, total
+ anomalous pulmonary venous return; TGA, transposition of the great arteries;
+ TOF, tetralogy of Fallot; VSD, ventricular septal defect (Figure modified
+ from Bruneau 2008)
+\end_layout
+
+\begin_layout Section
+Atrial septal defect (ASD)
+\end_layout
+
+\begin_layout Standard
+Atrial septal defect (ASD) is a congenital cardiac disorder and occurs widely
+ in females rather than males, as a result of the spontaneous malformation
+ in the interatrial septum / opening in the atrial septum (septa are physical
+ extensions of the myocardium lined with endocardium, located between the
+ two atria), allowing the blood to transfer directly between the left and
+ right atrium.
+ Atrial septation is defined as the division of a common atrium into the
+ left and right atrium that are noticed in a structurally well-developed,
+ four chambered tetrapod heart.
+ Adding to this, the atrial septum is developed by three distinct structures
+ that undertakes concurrent morphogenesis: the atrioventricular endocardial
+ cushions, the primary atrial septum (PAS), and the spina vestibuli or dorsal
+ mesenchymal protrusion (SV/DMP)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "8_Waldo2001,51_Rokitansky1875,53_Lutembacher1959"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ASD was initially described by Rokitansky in 1875.
+ However, already in 1513 Leonardo da Vinci had demonstrated a patent foramen
+ ovale, a “perforating channel” in the atrial septum
+\begin_inset CommandInset citation
+LatexCommand cite
+key "54_Mohan2014,55_Lindsey2007"
+
+\end_inset
+
+.
+ Later, in 1916 Lutembacher further described the combination of atrial
+ septal defect and mitral stenosis
+\begin_inset CommandInset citation
+LatexCommand cite
+key "56_Wu2004"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Embryology
+\end_layout
+
+\begin_layout Standard
+Atrial septation starts in the end of the 4th week Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig16"
+
+\end_inset
+
+.
+ From the roof of the atrium, between the systemic and pulmonary venous
+ openings a muscular shelf - “septum primum” – grows which later fuses with
+ the superior endocardial cushion at the atrioventricular level.
+ The interatrial linkage that exists before this fusion is called “ostium
+ primum”.
+ However, before the closure of the ostium primum, the upper part of the
+ primary septum is fragmented down creating a new interatrial communication
+ – the “ostium secundum”.
+ When the ostium primum is annihilated, the expansion of a posterior structure,
+ spina vestibuli, also plays a crucial role.
+ It is further encapsulated by muscles, thus making the base of the primary
+ septum stronger.
+ The upper and thinner part of the fibromuscular primary septum will then
+ serve as the flap valve of foramen ovale.
+ At this point, the roof of the primary atrium, between the systemic and
+ pulmonary venous entrances, initiates unfolding, thereby creates the secondary
+ septum –“septum secundum” that will form the upper rims of the foramen
+ ovale.
+ Still, the secondary septum is not a true septum but rather it is sandwich-like
+ in-folding of the atrial wall compiled with extracardiac adipose tissue.
+ This interatrial groove is often referred to as Söndergaard’s or Waterston’s
+ groove”.
+ Atrial septal “lipoma” or “lipomateous hypertrophy” is a common echocardiograph
+ic finding and, the denomination proposes involvement of the septum whereas
+ it is actually an extracardiac fat.
+ By the 12th week of development the right and left pulmonary venous become
+ separated and the atrial septation is terminated.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure/fig15.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig16"
+
+\end_inset
+
+Development of the atrial septum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(A) At 28 days after gestation, septum primum (Sep 1°)—the first septum
+ to appear in the developing atria— develops as a crescent-shaped structure.
+ Its leading edge is covered by a layer of mesenchymal cells called mesenchymal
+ cap (shown in red).
+ The space between the developing septum primum and the developing endocardial
+ cushions is called foramen primum or ostium primum.
+ Septum secundum (Sep 2°; limbus of the fossa ovalis) is a crescent-shaped
+ muscular infolding of the atria wall that appears shortly thereafter to
+ the right of septum primum.
+ (B) At 35 days, both septum primum and septum secundum continue to develop.
+ The openings within septum primum are called foramina secundi.
+ (C) At 60 days, the atrial septum is nearly fully formed and the foramina
+ secundi close by way of coalescing fenestrations within septum primum.
+ The foramen ovale remains patent throughout pregnancy.
+ (Figure modified from Geva 2014).
+\end_layout
+
+\begin_layout Subsection
+Incidence and causes of ASDs
+\end_layout
+
+\begin_layout Standard
+The reported incidence of congenital heart disease varies a lot, /1000 live
+ births and there are a number of reasons for this.
+ Most studies are merely restricted to infancy or childhood and do not count
+ lesions detected later in life.
+ This has a significant relevance for ASD, which often is diagnosed in adult
+ life.
+ Previous studies reporting the highest incidences are characterized by
+ a frequent use of echocardiography in a neonatal setting or during infancy
+ and, it is thus very obvious that the principal reason for the increase
+ of the incidence of CHD reported in recent years is the detection of mild
+ forms, particularly small ventricular septal defects.
+ Besides, small ASDs of the secundum type are also abundantly found, yet
+ it seems that the spontaneous closure rate is higher than formerly thought.
+ In addition to the diagnostic methodology and the age profile of the investigat
+ed population, referral patterns will play a major role in retrospective
+ studies based on a huge population.
+\end_layout
+
+\begin_layout Standard
+Resent findings reveals that despite the high prevalence and the significant
+ association with substantial morbidity and mortality, the fundamental etiology
+ responsible for ASD and majority of cases with it remains unknown..
+ The aberrant development of the atrial septum includes heterogeneous complex
+ biological processes and identifies important transcription factors involved
+ in atrial septation such as Gata4, Nkx2–5 and Tbx5, associated with accurate
+ spatial and temporal cooperation of cardiac cells commitment, differentiation
+ and proliferation of adhesion molecules, activation and expression of signallin
+g molecules, and both environmental and genetic risk factors.
+ This may disrupt this natural biological process of cardiogenesis and thus,
+ generating a large spectrum of congenital heart defects
+\begin_inset CommandInset citation
+LatexCommand cite
+key "22_Fahed2013,52_Perloff1995,53_Lutembacher1959"
+
+\end_inset
+
+.
+ On the contrary, there are families with recurrent ASD secundum having
+ a pattern suggesting autosomal dominant inheritance.
+ Secundum defects are often encountered in genetic syndromes such as Holt-Oram,
+ Ellis van Creveld, Noonan, Down, Budd-Chiari, and Jarcho-Levine.
+ The Holt-Oram syndrome is an autosomal dominant trait, described in 1960,
+ characterized by congenital heart disease.
+ Often ASD secundum combined with delayed electrical atrio-ventricular conductio
+n and forelimb malformations, triphalangeal or hypoplastic thumbs are the
+ typical features.
+ Modern genetics has shown that the syndrome is result of a mutation in
+ the TBX5 gene encoding a transcription factor that controls the α-myosin
+ heavy chain.
+ A decrease in the α-cardiac actin induces apoptosis and it is thought that
+ this would lead to an increased rate of absorption or apoptosis of the
+ primary atrial septum thereby causing an atrial septal defect of the secundum
+ type.
+ In patients with the history of trisomy 21, secundum and primum defects
+ are the most frequent lesions
+\begin_inset CommandInset citation
+LatexCommand cite
+key "53_Lutembacher1959"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Classification of ASDs
+\end_layout
+
+\begin_layout Standard
+ASDs are clinically distinguished on the basis of how they are involved
+ in other structures of the heart and whether they are formed during the
+ cardiac developmental process Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig17"
+
+\end_inset
+
+.
+ These types include; the Ostium secundum ASDs (resulting from the absence
+ or hypoplasia of the primary atrial septum PAS), and the Ostium primum
+ ASDs (belonging to the group of defects called atrio-ventricular septal
+ defects AVSDs).
+ AVSDs are thought to be a result of defective embryonic development of
+ embryonic endocardial cushions, Sinus venosus ASDs caused by a defect in
+ the incorporation of the sinus venosus chamber into the RA.
+ Current research signify that comprehensively predominant ASDs are characterize
+d by a common atrium that lacks the primary atrial septum and the spina
+ vestibuli or dorsal mesenchymal protrusion, amongst which the ostium secundum
+ ASD is the most frequent defect, representing 85% of all ASDs
+\begin_inset CommandInset citation
+LatexCommand cite
+key "23_Teteli2014,49_Zhang2016,51_Rokitansky1875,52_Perloff1995"
+
+\end_inset
+
+.
+ Mohan suggested, the position of the opening ASDs can further be subdivided
+ into type I Sinus venosus defects (positioned cranial to the fossa ovalis
+ with its developmental origin is uncertain) and type II (usually arises
+ from an enlarged foramen ovale and is regarded to be the result of an insuffici
+ent growth of the septum secundum)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "57_Samanek1989"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Uncommon types are:
+\end_layout
+
+\begin_layout Itemize
+The inferior vena cava form of the sinus venosus defect
+\end_layout
+
+\begin_layout Itemize
+Unroofed coronary sinus
+\end_layout
+
+\begin_layout Itemize
+Single atrium – complete absence of the septum
+\end_layout
+
+\begin_layout Itemize
+Isolated partial anomalous pulmonary venous drainage
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure/fig17.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig17"
+
+\end_inset
+
+Subtypes of atrial septal communications 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Secundum atrial septal defect (ASD)
+\end_layout
+
+\begin_layout Standard
+It constitutes up to 75-80 % of ASDs a defect within the fossa ovalis usually
+ due to one or several defects within septum primum.
+ Extension outside the true limits of the fossa ovalis due to a deficiency
+ of the infolding of the atrial wall is common.
+ It is refered to as secundum defect because of its occurance at the site
+ of the embryologic ostium secundum.
+ It is large due to deficiencies in the primary atrial septum.
+ It is ovular and sometimes extremely irregular in shape.
+ Secundum defects with multiple perforations of the membrane in the fossa
+ ovalis may also appear.
+ Septum secundum is well-formed in most patients.
+ Most secundum defects are not confluent with the vena cavae, right pulmonary
+ veins, coronary sinus, or the atrioventricular valves.
+ With the exception of patent foramen ovale, secundum atrial septal defect
+ is a widely known cause of an atrial-level shunt.
+ The size of secundum defects ranges from several millimetres to 2–3 cm.
+ Larger defects are usually associated with substantial deficiency, or even
+ a complete absence of septum primum
+\begin_inset CommandInset citation
+LatexCommand cite
+key "53_Lutembacher1959,58_Bermudez2007"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Primum atrial septal defect (ASD)
+\end_layout
+
+\begin_layout Standard
+Constitutes up to 15 % of ASDs and it is a partial form of atrio-ventricular
+ canal defect (endocardial cushion defect).
+ In ASD primum, the atrial septum superior to the AV valves is deficient
+ in making the AV valves to insert at the same level, the normal “off-set”
+ between the tricuspid and the mitral valve is lacking.
+ The defect is furthermore characterized by a common atrioventricular orifice
+ containing two distinct atrioventricular valve annuli completed by valve
+ tissue adhering to the crest of the ventricular septum.
+ The atrioventricular tissue occludes the space that accounts for the ventricula
+r septal defect component in the fully complete form of the malformation
+\begin_inset CommandInset citation
+LatexCommand cite
+key "53_Lutembacher1959"
+
+\end_inset
+
+.
+ Usually the defect is associated with a cleft in the anterior mitral leaflet
+ leading to mitral regurgitation.
+ ASD primum is typically linked with a left-axis deviation on the ECG.
+ This is due to the arrangement of the conduction tissue and not because
+ of a damage of a fascicle.
+\end_layout
+
+\begin_layout Subsection
+Sinus venosus defect
+\end_layout
+
+\begin_layout Standard
+Constitutes up to 10 % of ASDs and is characterized by a defect in the most
+ posterior and superior parts of the atrial septum at the intersection of
+ the superior vena cava and the right atrium.
+ The superior vena cava overrides the defect and in a majority of cases,
+ anomalous right pulmonary vein connection is found.
+ Embryologically, this is caused by a persisting interatrial channel in
+ the groove between the right and left atria which also wards off a normal
+ connection of the right pulmonary veins.
+ 
+\end_layout
+
+\begin_layout Subsection
+Patent foramen ovale 
+\end_layout
+
+\begin_layout Standard
+It is not a true atrial septal defect as there is no absence of tissue.
+ The fibromuscular membrane casing the fossa ovalis serves as a flap valve
+ permitting right-to-left atrial shunting which is crucial for the foetal
+ life.
+ After birth, due to the alteration of the interatrial pressure gradient,
+ the foramen ovale becomes functionally closed and eventually anatomically
+ fused.
+ However, in around 25% of the population, the anatomical fusion fails leaving
+ a potential for right-to-left shunting when the pressure of the right atrium
+ exceeds that of the left atrium.
+ However, rare cases have been reported, where there is a stretch of the
+ atrial septum due to left heart disease with increased left atrial pressures,
+ making a patent foramen ovale to become a true defect and thereby permitting
+ left-to-right shunting.
+ Considering the embryology of atrial septation, it is not surprising that
+ the patency of foramen ovale is usually inhabiting the cranial part of
+ the fossa ovalis Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig18"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure/fig18.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig18"
+
+\end_inset
+
+Dissection of an adult heart with a large patent foramen ovale 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The arrow passes through a large atrial septal defect (ASD), which resulted
+ from an abnormally large foramen ovale and excessive resorption of the
+ septum primum.
+ This is referred to as a secundum – type ASD, and it is one of the most
+ common types of congenital heart disease (Figure Modified from Moore, KL
+ 2015).
+\end_layout
+
+\begin_layout Section
+CLINICAL PRESENTATION
+\end_layout
+
+\begin_layout Standard
+An ASD seldom causes symptoms during childhood, a very large defect may
+ allow so much blood flow through, however, and it has been associated with
+ frequent respiratory infections, shortness of breath and failure to growth.
+ In the adult, symptoms are rare before the age of 40 years but later symptoms
+ increase with advancing age, shortness of breath with exertion and palpitations
+ due atrial arrhythmias being the most common amongst all symptoms.
+ Atrial arrhythmia, resulting from stretching of the conduction system,
+ may be the preceding sign of an ASD
+\begin_inset CommandInset citation
+LatexCommand cite
+key "23_Teteli2014"
+
+\end_inset
+
+.
+ Rarely, a patient with ASD will present with stroke or other systemic ischemic
+ event caused by paradoxical embolization of thrombus through the defect.
+ With persistent right ventricular volume overload or during hypertensive
+ pulmonary vascular disease complications in the ASD right ventricular failure
+ may cause peripheral oedema, pleural effusion and ascites.
+ In the presence of an ASD, there is a potential for paradoxical embolism,
+ however, considering the fact that a majority of ASD patients are females,
+ many of which undergoing the thrombogenic state of pregnancy, the reports
+ on paradoxical embolism are astonishingly rare
+\begin_inset CommandInset citation
+LatexCommand cite
+key "23_Teteli2014,58_Bermudez2007"
+
+\end_inset
+
+.
+ Incidental diagnoses are common by an echocardiogram obtained due to a
+ heart murmur or an abnormal finding on a chest radiogram or with an electrocard
+iogram’.
+\end_layout
+
+\begin_layout Section
+Diagnosis
+\end_layout
+
+\begin_layout Subsection
+Clinical sign & symptoms
+\end_layout
+
+\begin_layout Standard
+Very careful physical examination consisting of following clinical informations
+ : physical appearance, arterial pulse, jugular venous pulse, precordial
+ palpation, and auscultation are known to diagnose ASD
+\begin_inset CommandInset citation
+LatexCommand cite
+key "59_Burn1998"
+
+\end_inset
+
+.
+ Upon physical examination, majority of the young patients are without any
+ symptoms.
+ In around 2/3 there is a constant splitting of the second heart sound as
+ a consequence of the right ventricular volume load.
+ Signs of right heart failure are rare, but these can be encountered in
+ adults with pulmonary hypertension
+\begin_inset CommandInset citation
+LatexCommand cite
+key "53_Lutembacher1959"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Electrocardiography
+\end_layout
+
+\begin_layout Standard
+Characteristic electrocardiographic features of atrial septal defect includes
+ a tall P wave indicating right atrial enlargement
+\begin_inset CommandInset citation
+LatexCommand cite
+key "53_Lutembacher1959"
+
+\end_inset
+
+.
+ ECG typically shows an “incomplete right bundle branch” pattern along with
+ either a right-axis deviation in ostium secundum or a left-axis deviation
+ in ostium primum; furthermore a left or low atrial rhythm suggests a sinus
+ venosus ASD
+\end_layout
+
+\begin_layout Subsection
+Chest X-ray
+\end_layout
+
+\begin_layout Standard
+A chest X-ray is an essential part of the diagnostic workup in atrial septal
+ defect (ASD).
+ Typical findings include; heart enlargement (moderate cardiomegaly), particular
+ly right atrial enlargement and prominent central pulmonary vasculature
+ as a sign of increased pulmonary blood flow.
+ Discrepancy between enlarged central pulmonary arteries and relative paucity
+ of peripheral vasculature corresponds to pulmonary vascular obstructive
+ disease
+\begin_inset CommandInset citation
+LatexCommand cite
+key "53_Lutembacher1959,59_Burn1998,60_Oeyen2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Echocardiography
+\end_layout
+
+\begin_layout Standard
+Transthoracic echocardiography is a chief diagnostic tool to determine presence,
+ location, size, and haemodynamic characteristics of atrial septal defects.
+ Two-dimensional imaging with color Doppler flow mapping depicts the position
+ and size of the defect and the direction of flow
+\begin_inset CommandInset citation
+LatexCommand cite
+key "53_Lutembacher1959,61_Oeyen2010"
+
+\end_inset
+
+.
+ Three-dimensional imaging enables enface views about the defect from the
+ right and left atrial perspectives, allowing appreciation of the defect’s
+ shape and changes in size during the cardiac cycle.
+ Transoesophageal echocardiography provides an excellent alternative approach
+ in the patients who are presented with obesity, large body habitus, and
+ with a history of thoracic surgery
+\begin_inset CommandInset citation
+LatexCommand cite
+key "53_Lutembacher1959"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Management of congenital heart disease
+\end_layout
+
+\begin_layout Standard
+Advancement’s in echocardiography have allowed CHDs to be detected as early
+ as 17-18 weeks of gestation, and most of which are well tolerated during
+ fetal life due its connection with the maternal circulation.
+ It is only after birth when that connection is lost.
+ Most of the CHDs manifest clinically, some will be incompatible with extra
+ uterine life, some clinically apparent within the first few days/weeks
+ of life, and others may remain undetected reaching adult life.
+ Advances in cardiovascular surgery and intensive care have proved fruitful
+ for CHDs correction surgically, and in the future fetal cardiac surgery
+ may be a greater possibility for its cure.
+ During adulthood, some patients may develop further complications (e.g.
+ endocarditis, stroke, systemic or pulmonary hypertension, aortic aneurysm
+ or dissection and arrhythmias), and the main causes of their death are
+ heart failure and sudden cardiac death.
+ Current guidelines emphasize on the surveillance and treatment of adults
+ with CHD, with an aim to reduce symptoms, and the risks and severity of
+ late complications.
+\end_layout
+
+\begin_layout Section
+Recurrence risks
+\end_layout
+
+\begin_layout Standard
+The process of evaluating and discussing the recurrence risks of disease
+ has to take into account the family history and patient characteristics
+ (nature of defect and extracardiac manifestations) to further prevent the
+ disease.
+ For Mendelian patterns of inheritance this is easily predicted, but one
+ also has to consider intra- and inter-familial variability.
+ The challenges lie in sporadic non-syndromic patients with CHD.
+ According to an estimate familial recurrence of CHD represents 3-5% of
+ non-syndromic CHD.
+ A prospective multicenter study reported recurrent risks of CHD as 4.1%
+ (with an affected parent) and 2.1% (with an affected sibling).
+ There appeared to be gender differences with a higher prevalence of CHD
+ in the offspring of affected women with CHD (5.7%) than those of affected
+ men (2.2%).
+ The recurrence risk of ASD for a couple after one affected child is ~3%,
+ but it increases to 10% if there are two affected children in the family
+\begin_inset CommandInset citation
+LatexCommand cite
+key "62_Marelli2010"
+
+\end_inset
+
+.
+ A population based study of 18,000 Danish patients with CHD estimated an
+ individual’s risk of CHD in a family with a history of CHD.
+ Furthermore, they found that the relative risk for the same type of CHD
+ ranged from 3-fold (septal defects) to 80- fold (heterotaxia) in the first
+ degree relatives.
+ The overall relative risk for the same type of CHD was 8.15, and for any
+ other type of CHD was 2.68, the latter indicating that some families have
+ a susceptibility towards acquiring CHD
+\begin_inset CommandInset citation
+LatexCommand cite
+key "63_Engelen2011,64_Doolittle2013"
+
+\end_inset
+
+.
+ As the population of adults with CHD has increased significantly, and these
+ adults have had children themselves, clinicians are now foreseeing more
+ families with multiple affected individuals with CHD.
+ Many of these families were found to have an autosomal dominant inheritance
+ pattern, which can significantly increase the risk of CHD to offspring
+ (50%).
+ Additionally many cases have been reported with families having no apparent
+ family history of CHD, but parents have had more than one child with CHD,
+ suggesting an autosomal recessive pattern of inheritance (25% recurrence
+ risk).
+ On the contrary, there is a great variability in the phenotype between
+ individuals from the same family.
+ These familial recurrences of CHD are a significant resource for molecular
+ studies and for the further identification of genes involved in heart developme
+nt.
+\end_layout
+
+\begin_layout Section
+Clinical genetics and gene identification
+\end_layout
+
+\begin_layout Subsection
+Genetic counselling in patients with congenital heart disease
+\end_layout
+
+\begin_layout Standard
+The human body comprises of more than ten trillion cells belonging to over
+ 200 different cell types.
+ All of these cells, with only few exceptions like erythrocyte and B cells,
+ contain common genetic information.
+ a Phenotypic variability is a highly regulated process; the expression
+ of genes, i.e.
+ the synthesis of a functional gene product based on DNA information, is
+ a highly regulated process.
+ This regulation is vital for processes like; development, differentiation,
+ regeneration, signaling and normal organ function 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "67_Loewe2008,69_Yates2012"
+
+\end_inset
+
+.
+ It is crucial to identify the underlying genetic factor in a patient with
+ CHD as there may be: (a) other organ system involvement, (b) prognostic
+ information for clinical outcome, (c) important genetic reproductive risks
+ for the family, and (d) other family members for whom genetic testing may
+ be appropriate.
+ With the mainstreaming of clinical genetics services and an increased awareness
+ amongst other medical professionals, a great number of patients and families
+ with CHD are seen by clinical genetics departments for genetic counseling.
+ For many of the patients, the technique of genetic counselling helps to:
+ (a) identify and understand the genetic basis of their CHD, (b) provide
+ accurate genetic counselling on recurrence risks, and (c) identify and
+ manage extracardiac manifestations.
+ Although, the majority of the cases has an isolated anomaly and is sporadic,
+ some will be syndromic and/or familial, and this will in turn affect the
+ nature of genetic counselling for these individuals.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "65_Niu2013,66_Eddy2013"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+The Human Genome
+\end_layout
+
+\begin_layout Standard
+DNA is centralized in the cell nucleus and is organized in 23 pairs of homologou
+s chromosomes in almost each cells of the human body.
+ Chromosomes consist of chromatin; DNA folded with histone and non-histone
+ proteins, and further enables the condensation of the DNA in the nucleus.
+ In addition to this, they play a pivotal role in regulatory processes.
+ Adding more to this, the chromosomal DNA, a very small portion of the genetic
+ information is coded in the mitochondrial genome.
+ The DNA is organized in a double helix, in which the four nucleobases adenine
+ (A), guanine (G), thymine (T) and cytosine (C) are bound by hydrogen bonds
+ in pairs of complementary bases (A and T, G and C).
+ Ultimately, they code the information for the transcription of ribonucleic
+ acid (RNA) molecules and are then translated into proteins.
+ In 1958, Francis Crick formulated this flow of genetic information as the
+ “Central Dogma of Molecular Biology.
+\end_layout
+
+\begin_layout Standard
+In total, the human genome consists of approximately 3,200 megabases and
+ contains about 25,000 protein-coding genes, which correspond to only 1-2%
+ of its total size.
+ Besides regulatory elements such as promoters or enhancers, a vast majority
+ of the non-coding portion of the genome has long been considered as “junk
+ DNA” serving no specific biological function.
+ However, recent studies like the Encyclopedia of DNA Elements (ENCODE)
+ project, which assigned biochemical function to 80% of the human genome16,
+ gave rise to a lively debate about the nature of non-coding DNA and the
+ definition of biological function, which will have to be refined in the
+ upcoming future
+\begin_inset CommandInset citation
+LatexCommand cite
+key "67_Loewe2008,69_Yates2012"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Genetic Assessment of proband
+\end_layout
+
+\begin_layout Standard
+The assessment of any patient with a condition suspected to have a genetic
+ basis always starts with a detailed family history spanning preceeding
+ at least three generations, including the presence of consanguinity.
+ This allows the identification of any Mendelian patterns of inheritance.
+ A detailed history and clinical examination will help to identify features
+ predicting the underlying genetic syndrome with CHD (e.g.
+ developmental delay, learning difficulties, extracardiac manifestations,
+ behavioural problems, and facial dysmorphism).
+\end_layout
+
+\begin_layout Subsection
+Mutations and Genetic Variation
+\end_layout
+
+\begin_layout Standard
+Genetic differences among individuals are described as genetic variation,
+ which is created by recombination and mutations.
+ While mutations provide the material for natural selection and are the
+ primary source of diversity among species, they often damage normal biological
+ functions and are proved to be harmful for the individual
+\begin_inset CommandInset citation
+LatexCommand cite
+key "70_Haraksingh2013,71_Bhangale2005"
+
+\end_inset
+
+.
+ They can come into existence from a variety of causes including; errors
+ in recombination or chromosome segregation during meiosis, errors in DNA
+ replication, mobile DNA elements, DNA damage through mutagenic agents and
+ spontaneous deamination of methylated CpG dinucleotides.
+ Only the mutations present in germ line cells are transmitted to the next
+ generation; yet, somatic mutations can be the cause for a variety of diseases
+ like cancer
+\begin_inset CommandInset citation
+LatexCommand cite
+key "72_Stankiewicz2010"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Mutations are classified based on their size, biochemical nature and functional
+ effect.
+ Single nucleotide variations (SNVs) only change one nucleotide and it can
+ be of following types; silent, missense (altering the protein’s amino acid
+ sequence) or nonsense (coding for a translation stop).
+ Missense mutations can be devastating to the protein’s function or can
+ be benign, e.g.
+ when the amino acid is exchanged for a functionally conserved residue.
+ Besides coding regions, SNVs can also influence regulatory elements like
+ promoters, enhancers, transcription factor binding sites or splice junctions
+ as well as ncRNAs, thus potentially affecting regulatory mechanisms.
+ Profoundly common SNVs with a population frequency of ≥1% are denoted as
+ single nucleotide polymorphisms (SNPs).
+ The second class of local variations are short insertions or deletions
+ with a length ranging from only a few base pairs (usually <5bp), which
+ are referred to as InDels.
+ They can prove to be potentially very harmful by altering the reading frame
+ of coding sequences.
+ Moreover, only InDels of triplets will keep the reading frame intact.
+ However, they still are able to alter the amino acid sequence of the resulting
+ protein
+\begin_inset CommandInset citation
+LatexCommand cite
+key "73_Zhang2009,74_Nagaoka2012"
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Copy number variations (CNVs) are submicroscopic structural variations that
+ alter the copy number of entire genes or genomic regions.
+ CNVs can result in Mendelian diseases or complex sporadic syndromes by
+ various molecular mechanisms, including; altered gene dosage, gene fusion,
+ gene disruption and position effects.
+ However, they can also be found as benign polymorphic variations[75, 76].Conclus
+ively, numerical chromosomal abnormalities (aneuploidies) like monosomies
+ or trisomies represent a major mutational threat and are the leading cause
+ for miscarriages and congenital defects in human.
+ Most of the aneuploidies are lethal during embryonic development; others
+ may cause severe syndromic disorders affecting multiple organ systems.
+ The identification of trisomy 21 as the cause for Down syndrome in 1959,
+ provided the first link between a chromosome abnormality and a clinical
+ disorder[77, 78].
+\end_layout
+
+\begin_layout Section
+WHOLE EXOME SEQUENCING
+\end_layout
+
+\begin_layout Standard
+Whole exome sequencing (WES) is a technique used to identify and sequence
+ the coding regions of all annotated protein coding genes.
+ It can be further divided into three parts: preparation of genomic DNA
+ libraries, hybridization of these libraries, and sequencing of the hybridized
+ fragments.
+\end_layout
+
+\begin_layout Standard
+There are some pitfalls in using whole exome sequencing instead of whole
+ genome sequencing.
+ Since, whole exome sequencing only identifies the sequence of the coding
+ regions many structural and other functional parts are not being included
+ which may also contribute for the occurrence of a disease.
+ WES does not cover untranslated regions, enhancers, and long-noncoding
+ RNAs, which may be potentially functional and helpful in diagnosing various
+ diseases.
+ Structural variations such as ; the copy number variants, translocations,
+ and inversions are also not included in whole exome sequencing.
+ Despite these downfalls, whole exome sequencing is still broadly used among
+ researchers due to its cost effectiveness, robustness, and timeliness.
+\end_layout
+
+\begin_layout Standard
+When compared to whole genome sequencing, WES costs five times less, has
+ a higher coverage depth of 100x versus 30x, and requires a short processing
+ time since only a sixth of the genome is used for the analysis.
+ Additionally, most allelic variants that have been found to be main reason
+ behind the Mendelian disorders disrupting protein-coding sequences, which
+ can easily be detected via exome sequencing.
+ Variants in the exome sequences also have a larger effect size rather than
+ those within non-coding sequences even in highly conserved regions.
+ Henceforth, considering all these reasons our lab has chosen to perform
+ whole exome sequencing on the mutant mice.
+\end_layout
+
+\begin_layout Section
+EVOLUTIONARY CONSERVATION
+\end_layout
+
+\begin_layout Standard
+Evolutionary conservation is crucial in providing support for genes that
+ may contribute to disease.
+ Conservation means that the amino acids at a certain position are the same
+ throughout a set of species.
+ Mutations in regions that are highly conserved are more likely to result
+ in a disease than those that are less conserved or not conserved at all.
+ It has been reported as a basic criterion for examining the disease causing
+ potential of an amino acid or nucleotide sequence change.
+ Research done by Pierpont et al.
+ describes three criteria used to establish the disease causing potential
+ of a mutation.
+ These criteria include: a sequence change that alters the gene coding sense,
+ gene splice site, or regulatory region of the protein; segregates with
+ disease in a kindred; and is not found in unrelated, unaffected control
+ chromosomes.
+ Some mutations may also be considered as conserved if the changed in the
+ amino acid residue has similar properties of the original residue.
+ Comparisons of the sequences of the same protein in different species helped
+ researchers to pinpoint those residues that are structurally or functionally
+ vital as these are conserved.
+\end_layout
+
+\begin_layout Standard
+Mutations may be tolerated or considered nonthreatening, as long as the
+ change does not destroy or seriously alter the protein’s function.
+ Mutations are damaging, or threatening, when there are changes in side
+ chains that are involved in binding substrates or cofactors, that interact
+ with other proteins, or that participate in catalytic mechanisms altering
+ or wrecking the protein’s function.
+ 
+\end_layout
+
+\begin_layout Standard
+Candidate gene
+\end_layout
+
+\begin_layout Standard
+Whole genomic 
+\end_layout
+
+\begin_layout Standard
+WES
+\end_layout
+
+\begin_layout Standard
+感谢导师对我的悉心指导，同时感谢华工校内外多位同学对该模板的测试和提供的改进。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "80col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align right
+徐川页 
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+2017年04月1日
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "scutthesis"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
